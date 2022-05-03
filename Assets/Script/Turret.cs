@@ -5,14 +5,19 @@ using UnityEngine;
 public class Turret : MonoBehaviour
 {
     private  Transform _target;
+    [Header("Unity Setup Fields")]
     private string _enemyTag = "Enemy";
 
     public Transform rotateTurret;
 
-    public float range=15f;
-    public float turnSpeed = 10f;
+    public GameObject bulletPrefab;
+    public Transform firePoint;
 
-    
+    [Header("Attributes")]
+    public float range=15f;
+    public float fireRate = 1f;
+    public float fireCountDown = 0f;
+    public float turnSpeed = 10f;
 
     private void Start()
     {
@@ -28,8 +33,23 @@ public class Turret : MonoBehaviour
         Quaternion lookRotation = Quaternion.LookRotation(direction);
         Vector3 rotation = Quaternion.Lerp(rotateTurret.rotation,lookRotation,Time.deltaTime*turnSpeed).eulerAngles;
         rotateTurret.rotation = Quaternion.Euler(-90,rotation.y, 0);
-    }
 
+        if(fireCountDown<=0f)
+        {
+            Shoot();
+            fireCountDown = 1f / fireRate;
+        }
+        fireCountDown -= Time.deltaTime;
+    }
+    private void Shoot()
+    {
+       GameObject bulletGameObject= (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Bullet bullet = bulletGameObject.GetComponent<Bullet>();
+        if(bullet != null)
+        {
+            bullet.Seek(_target);
+        }
+    }
     private void UpdateTarget()
     {
         GameObject[] enemys = GameObject.FindGameObjectsWithTag(_enemyTag);
