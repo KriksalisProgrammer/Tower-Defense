@@ -10,7 +10,8 @@ public class Node : MonoBehaviour
     private GameObject _turret;
 
     public Color hoverColor;
-    
+    public Vector3 positionOffset;
+
     private void Start()
     {
         _rend=GetComponent<Renderer>();
@@ -24,7 +25,7 @@ public class Node : MonoBehaviour
             return;
         }
         GameObject turretToBuild=BuildManager.instance.GetTurretToBuild();
-        _turret =(GameObject)Instantiate(turretToBuild, transform.position, transform.rotation);
+        _turret =(GameObject)Instantiate(turretToBuild, transform.position+positionOffset, Quaternion.Euler(-90,0,0));
     }
     private void OnMouseEnter()
     {
