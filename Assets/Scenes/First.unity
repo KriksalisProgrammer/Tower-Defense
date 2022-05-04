@@ -5445,6 +5445,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5517,6 +5518,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 57.762, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37590225ac176b4ca2c544ce35fca5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panSpeed: 30
+  panBorderThickness: 10
+  scrollSpeed: 5
+  minY: 10
+  maxY: 80
 --- !u!4 &965169571 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8792533663046983728, guid: 786b9e26dbef3804abc7aef6f03ec061, type: 3}
@@ -9824,7 +9842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b947d585b00ff845aa8565b4ade49ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standartTurrentPrefab: {fileID: 0}
+  standartTurrentPrefab: {fileID: 7338767737208426741, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
 --- !u!4 &1674477759 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8792533663046983728, guid: 786b9e26dbef3804abc7aef6f03ec061, type: 3}
@@ -11120,7 +11138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920051385}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 71.75, y: 2.5, z: 6.0199966}
+  m_LocalPosition: {x: 71.75, y: 2.5, z: 5.47}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12448,67 +12466,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8792533663046983728, guid: 786b9e26dbef3804abc7aef6f03ec061, type: 3}
   m_PrefabInstance: {fileID: 52926322}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &966458357147155393
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 119597249691704732, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
-      propertyPath: m_Name
-      value: Laser Gun Tower 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 784529841751623462, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 784529841751623462, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.013896942
-      objectReference: {fileID: 0}
-    - target: {fileID: 784529841751623462, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 784529841751623462, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 48.588066
-      objectReference: {fileID: 0}
-    - target: {fileID: 784529841751623462, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.70255375
-      objectReference: {fileID: 0}
-    - target: {fileID: 784529841751623462, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.70255375
-      objectReference: {fileID: 0}
-    - target: {fileID: 784529841751623462, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.08011413
-      objectReference: {fileID: 0}
-    - target: {fileID: 784529841751623462, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.08011413
-      objectReference: {fileID: 0}
-    - target: {fileID: 784529841751623462, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 784529841751623462, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 784529841751623462, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -13.011
-      objectReference: {fileID: 0}
-    - target: {fileID: 3204570093274548312, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
 --- !u!1001 &6304201199789184087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12566,3 +12523,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07e13a8bd7bbbac4cb2557e9e7cce103, type: 3}
+--- !u!1001 &7573334448053008040
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7338767737208426741, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
+      propertyPath: m_Name
+      value: Laser Gun Tower 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7967812167549815375, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7967812167549815375, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.013896942
+      objectReference: {fileID: 0}
+    - target: {fileID: 7967812167549815375, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7967812167549815375, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 48.588066
+      objectReference: {fileID: 0}
+    - target: {fileID: 7967812167549815375, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70255375
+      objectReference: {fileID: 0}
+    - target: {fileID: 7967812167549815375, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.70255375
+      objectReference: {fileID: 0}
+    - target: {fileID: 7967812167549815375, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.08011413
+      objectReference: {fileID: 0}
+    - target: {fileID: 7967812167549815375, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.08011413
+      objectReference: {fileID: 0}
+    - target: {fileID: 7967812167549815375, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7967812167549815375, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7967812167549815375, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -13.011
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
