@@ -33,7 +33,7 @@ public class Node : MonoBehaviour
             return;
         }
         GameObject turretToBuild=_buildManager.GetTurretToBuild();
-        _turret =(GameObject)Instantiate(turretToBuild, transform.position+positionOffset, Quaternion.Euler(-90,0,0));
+        _turret =(GameObject)Instantiate(turretToBuild, transform.position+positionOffset, Quaternion.Euler(0,0,0));
     }
     private void OnMouseEnter()
     {

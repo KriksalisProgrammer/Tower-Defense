@@ -4635,6 +4635,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8792533663046983728, guid: 786b9e26dbef3804abc7aef6f03ec061, type: 3}
   m_PrefabInstance: {fileID: 490874065}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &731935654
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1293460681312030234, guid: 80974caa85e91954da7603ad624c3ec9, type: 3}
+      propertyPath: m_Name
+      value: BulletRed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1835065208189093342, guid: 80974caa85e91954da7603ad624c3ec9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8ac0b031b312d6a48a3897ac6dc3e950, type: 2}
+    - target: {fileID: 8945922543644857648, guid: 80974caa85e91954da7603ad624c3ec9, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8945922543644857648, guid: 80974caa85e91954da7603ad624c3ec9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8945922543644857648, guid: 80974caa85e91954da7603ad624c3ec9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 8945922543644857648, guid: 80974caa85e91954da7603ad624c3ec9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8945922543644857648, guid: 80974caa85e91954da7603ad624c3ec9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8945922543644857648, guid: 80974caa85e91954da7603ad624c3ec9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8945922543644857648, guid: 80974caa85e91954da7603ad624c3ec9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8945922543644857648, guid: 80974caa85e91954da7603ad624c3ec9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8945922543644857648, guid: 80974caa85e91954da7603ad624c3ec9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8945922543644857648, guid: 80974caa85e91954da7603ad624c3ec9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8945922543644857648, guid: 80974caa85e91954da7603ad624c3ec9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 80974caa85e91954da7603ad624c3ec9, type: 3}
 --- !u!4 &735240722 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8792533663046983728, guid: 786b9e26dbef3804abc7aef6f03ec061, type: 3}
@@ -6081,7 +6142,7 @@ GameObject:
   - component: {fileID: 991160564}
   - component: {fileID: 991160563}
   m_Layer: 5
-  m_Name: ShopTurrent (1)
+  m_Name: LaserTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6204,7 +6265,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9696f8b9f9b75fb40aa0c4831897da63, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5598b3433853b5146af566dade763014, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10524,8 +10585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b947d585b00ff845aa8565b4ade49ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standartTurrentPrefab: {fileID: 7338767737208426741, guid: 8b6b28f39ed4d5e4196525b9cd4de523, type: 3}
-  anotherTurretPrefab: {fileID: 7338767737208426741, guid: 2d1b7a087548ebd4a8f7613edb3f9d69, type: 3}
+  standartTurrentPrefab: {fileID: 3582588086327096441, guid: ae0d89684bab2234d834ec322affdd19, type: 3}
+  anotherTurretPrefab: {fileID: 3582588086327096441, guid: 0c81589c99b888447b2d954aa5d0a06b, type: 3}
 --- !u!4 &1674477759 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8792533663046983728, guid: 786b9e26dbef3804abc7aef6f03ec061, type: 3}
