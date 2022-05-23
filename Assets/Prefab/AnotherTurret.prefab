@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateTurret: {fileID: 1426267659647500534}
-  bulletPrefab: {fileID: 1293460681312030234, guid: 80974caa85e91954da7603ad624c3ec9, type: 3}
+  bulletPrefab: {fileID: 2747488263615326465, guid: 2e8ff784198a4624ea72a500381f5c95, type: 3}
   firePoint: {fileID: 8042669893402942213}
   range: 30
   fireRate: 0.25
