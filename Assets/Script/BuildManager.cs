@@ -26,6 +26,10 @@ public class BuildManager : MonoBehaviour
     {
         get { return _turretToBuild != null; }
     }
+    public bool HasMoney
+    {
+        get { return PlayerStats.Money >=_turretToBuild.Cost; }
+    }
     public void BuildTurretOn(Node node)
     {
         if (PlayerStats.Money < _turretToBuild.Cost)
