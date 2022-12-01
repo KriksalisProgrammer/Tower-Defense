@@ -2577,7 +2577,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 632746073}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: PurchaseStandartTurret
+        m_MethodName: SelectStandartTurret
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4253,6 +4253,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21bf1d44ec964404b8d0dddeef22fec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  standartTurret:
+    prefab: {fileID: 3582588086327096441, guid: ae0d89684bab2234d834ec322affdd19, type: 3}
+    Cost: 100
+  missileTurret:
+    prefab: {fileID: 3582588086327096441, guid: 0c81589c99b888447b2d954aa5d0a06b, type: 3}
+    Cost: 250
 --- !u!4 &641442864 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8792533663046983728, guid: 786b9e26dbef3804abc7aef6f03ec061, type: 3}
@@ -6174,7 +6180,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 632746073}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: AnotherPurchaseTurret
+        m_MethodName: SelectPurchaseTurret
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10475,6 +10481,7 @@ GameObject:
   - component: {fileID: 1671289062}
   - component: {fileID: 1671289061}
   - component: {fileID: 1671289063}
+  - component: {fileID: 1671289064}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -10526,6 +10533,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   standartTurrentPrefab: {fileID: 3582588086327096441, guid: ae0d89684bab2234d834ec322affdd19, type: 3}
   anotherTurretPrefab: {fileID: 3582588086327096441, guid: 0c81589c99b888447b2d954aa5d0a06b, type: 3}
+--- !u!114 &1671289064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671289060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5206668b7863f7d4f9c44f465acf67a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 400
 --- !u!4 &1674477759 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8792533663046983728, guid: 786b9e26dbef3804abc7aef6f03ec061, type: 3}
@@ -13355,71 +13375,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8792533663046983728, guid: 786b9e26dbef3804abc7aef6f03ec061, type: 3}
   m_PrefabInstance: {fileID: 52926322}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &5968892844736477325
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1314008064626184341, guid: 3f35bea51d3fedf4297bd413d28517ef, type: 3}
-      propertyPath: m_Name
-      value: MissileExplotionEffect
-      objectReference: {fileID: 0}
-    - target: {fileID: 6356562603758011094, guid: 3f35bea51d3fedf4297bd413d28517ef, type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6356562603758011094, guid: 3f35bea51d3fedf4297bd413d28517ef, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 28.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 6356562603758011094, guid: 3f35bea51d3fedf4297bd413d28517ef, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6356562603758011094, guid: 3f35bea51d3fedf4297bd413d28517ef, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 48
-      objectReference: {fileID: 0}
-    - target: {fileID: 6356562603758011094, guid: 3f35bea51d3fedf4297bd413d28517ef, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 6356562603758011094, guid: 3f35bea51d3fedf4297bd413d28517ef, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 6356562603758011094, guid: 3f35bea51d3fedf4297bd413d28517ef, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6356562603758011094, guid: 3f35bea51d3fedf4297bd413d28517ef, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6356562603758011094, guid: 3f35bea51d3fedf4297bd413d28517ef, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6356562603758011094, guid: 3f35bea51d3fedf4297bd413d28517ef, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6356562603758011094, guid: 3f35bea51d3fedf4297bd413d28517ef, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7054750927579713842, guid: 3f35bea51d3fedf4297bd413d28517ef, type: 3}
-      propertyPath: m_Intensity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7427767362244818599, guid: 3f35bea51d3fedf4297bd413d28517ef, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3f35bea51d3fedf4297bd413d28517ef, type: 3}
 --- !u!1001 &6304201199789184087
 PrefabInstance:
   m_ObjectHideFlags: 0
